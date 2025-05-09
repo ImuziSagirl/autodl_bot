@@ -34,14 +34,6 @@ class AutoDLPlugin(BasePlugin):
     async def initialize(self):
         pass
     
-    @property
-    def plugin_meta(self):
-        return {
-            "name": "AutoDLPlugin",
-            "description": "AutoDL监控与抢卡助手",
-            "version": "1.0.0",
-            "author": "YourName"
-        }
     
     def _get_user_config(self, user_id: int) -> AutoDLConfig:
         """获取用户配置"""
